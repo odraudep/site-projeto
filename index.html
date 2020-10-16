@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+  
+  <header>
+
+    <div id="resp-bg" onclick="remove()"></div> <!-- .bgblack -->
+
+    <nav>
+      <span id="logo"><a href="#">Logo</a></span>
+
+      <span id="hamb" onclick="add()">&#9776;</span>
+
+      <div id="items-menu" class="close">  <!--open-->
+        <span id="fechar" onclick="remove()">&#10016;</span>
+
+        <ul id="menu" class="open">
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div id="header-base">
+      
+      <!-- FORM -->
+      <div id="form">
+
+        <span id="h1f">Orçamento</span> <br>
+
+        <p>Nome: <input type="text" name="txtname" id="txtname" placeholder="Digite seu nome..."></p>
+
+        <p>Contato: <input type="text" name="txtcont" id="txtcont" placeholder="E-mail, Whatsapp..."></p>
+
+        <p>Grau de Urgência: <br>
+          <span class="inpt-range">Baixo</span>
+          <input type="range" name="txtrange" id="txtrange" max="4" min="0">
+          <span class="inpt-range">Alto</span>
+        </p>
+
+        <p>
+          Detalhes: <br>
+          <textarea name="txtarea" id="txtarea" cols="40" rows="13" placeholder="Informe o máximo possível..." style="resize: none" id="txttext"></textarea>
+        </p>
+
+        <input type="button" value="Enviar" onclick="enviar()">
+
+      </div>   
+
+    </div>
+
+  </header>
+
+  <section>
+    <h1>Animais</h1>
+
+    <div class="secao">
+      <h2>Tigre</h2>
+
+      <p>Tigre Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam harum exercitationem neque expedita deserunt suscipit minima recusandae, facilis maiores odio vitae excepturi unde impedit est magni molestias numquam sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur dolor consequuntur porro quae, optio tempora ducimus incidunt exercitationem veritatis esse, rem eligendi inventore ab odit tenetur cumque libero aspernatur.</p>
+
+      <div class="img">
+        <img src="images/tigre.jpg" alt="tigre" title="Tigre">
+        <div class="hover">Tigre</div>
+      </div>
+      
+    </div>
+
+    <div class="secao">
+      <h2>Cabra</h2>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam harum exercitationem neque expedita deserunt suscipit minima recusandae, facilis maiores odio vitae excepturi unde impedit est magni molestias numquam sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur dolor consequuntur porro quae, optio tempora ducimus incidunt exercitationem veritatis esse, rem eligendi inventore ab odit tenetur cumque libero aspernatur.</p>
+
+      <div class="img">
+        <img src="images/cabra.jpg" alt="cabra" title="Cabra">
+        <div class="hover">Cabra</div>
+      </div>
+      
+    </div>
+
+    <div class="secao">
+      <h2>Esquilo</h2>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam harum exercitationem neque expedita deserunt suscipit minima recusandae, facilis maiores odio vitae excepturi unde impedit est magni molestias numquam sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur dolor consequuntur porro quae, optio tempora ducimus incidunt exercitationem veritatis esse, rem eligendi inventore ab odit tenetur cumque libero aspernatur.</p>
+
+      <div class="img">
+        <img src="images/esquilo.jpg" alt="esqulo" title="Esquilo">
+        <div class="hover">Esquilo</div>
+      </div>
+
+    </div>
+
+    <div class="secao">
+      <h2>Rango</h2>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam harum exercitationem neque expedita deserunt suscipit minima recusandae, facilis maiores odio vitae excepturi unde impedit est magni molestias numquam sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur dolor consequuntur porro quae, optio tempora ducimus incidunt exercitationem veritatis esse, rem eligendi inventore ab odit tenetur cumque libero aspernatur.</p>
+
+      <div class="img">
+        <img src="images/rango.jpg" alt="rango" title="Rango">
+        <div class="hover">Rango</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>&copy; Eduardo</footer>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
